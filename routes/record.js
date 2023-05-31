@@ -28,8 +28,8 @@ router.get("/record/:username", (req, res) => {
     })
 })
 
-router.post("/record/:username", (req, res) => {
-    const username = req.params.username
+router.post("/record", (req, res) => {
+    const username = req.body.username
     const weight = req.body.weight
     const height = req.body.height
 
