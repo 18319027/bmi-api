@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 const recordRouter = require('./routes/record')
 
 app.use(bodyParser.urlencoded({extended: true}))
-app.use(bodyParser.json());
+app.use(bodyParser.json())
 app.use(recordRouter)
 
 app.get("/", (req, res) => {
